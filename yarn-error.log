@@ -1,0 +1,85 @@
+Arguments: 
+  /usr/local/Cellar/node/12.8.1/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/alireza/Projects/React-Typescript-Component-Boilerplate/node_modules/.bin:/Users/alireza/Library/Android/sdk/emulator:/Users/alireza/Library/Android/sdk/tools:/Users/alireza/Library/Android/sdk/tools/bin:/Users/alireza/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.8.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/alireza/Projects/react-typescript-component-boilerplate/package.json: Unexpected token } in JSON at position 1749
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "react-typescript-component-boilerplate",
+    "version": "2.0.0",
+    "description": "Boilerplate for creating reusable react component",
+    "keywords": [
+      "react",
+      "typescript",
+      "component",
+      "boilerplate",
+      "react typescript component"
+    ],
+    "author": "Alireza",
+    "license": "MIT",
+    "main": "es/Component/index.js",
+    "module": "es/Component/index.js",
+    "scripts": {
+      "start": "webpack-dev-server -d --debug --devtool  source-map  --output-pathinfo --progress --colors --port 3000 --open --host 0.0.0.0",
+      "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+      "build:es": "tsc --outDir es",
+      "build": "npm run build:es",
+      "clean": "rimraf lib dist es coverage",
+      "prepare": "npm run clean && npm run build",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "peerDependencies": {
+      "react": "^16.9.0"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.6.2",
+      "@babel/core": "^7.6.2",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
+      "@babel/plugin-proposal-decorators": "^7.6.0",
+      "@babel/plugin-proposal-function-bind": "^7.2.0",
+      "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+      "@babel/preset-env": "^7.6.2",
+      "@babel/preset-react": "^7.0.0",
+      "@babel/preset-typescript": "^7.6.0",
+      "@types/react": "^16.9.3",
+      "babel-loader": "^8.0.6",
+      "css-loader": "^3.2.0",
+      "html-webpack-plugin": "^3.2.0",
+      "mini-css-extract-plugin": "^0.8.0",
+      "rimraf": "^3.0.0",
+      "style-loader": "^1.0.0",
+      "ts-loader": "^6.1.2",
+      "typescript": "^3.6.3",
+      "webpack": "^4.20.2",
+      "webpack-cli": "^3.1.2",
+      "webpack-dev-server": "^3.1.9"
+    },
+    "dependencies": {
+      "core-js": "^3.2.1",
+      "react": "^16.9.0",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
