@@ -31,4 +31,3 @@ var SwipItem = function (props) {
 };
 SwipItem.defaultProps = {};
 export default SwipItem;
-//# sourceMappingURL=index.js.map

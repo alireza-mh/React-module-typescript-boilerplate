@@ -1,2 +1,2 @@
-import Swip from './Component';
-export default Swip;
+export {default as Swip} from './Component';
+

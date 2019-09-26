@@ -1,6 +1,6 @@
 {
   "name": "react-typescript-component-boilerplate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Boilerplate for creating reusable react component",
   "keywords": [
     "react",
@@ -15,7 +15,7 @@
   "module": "es/index.js",
   "scripts": {
     "start": "webpack-dev-server -d --debug --devtool  source-map  --output-pathinfo --progress --colors --port 3000 --open --host 0.0.0.0",
-    "build:commonjs": "tsc --outDir lib",
+    "build:commonjs": "tsc",
     "build:es": "tsc -m esNext --outDir es",
     "build": "npm run build:commonjs && npm run build:es",
     "clean": "rimraf lib dist es coverage",
